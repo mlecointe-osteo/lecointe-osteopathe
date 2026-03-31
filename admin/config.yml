@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages du site"
+    files:
+
+      - name: "accueil"
+        label: "Accueil"
+        file: "index.html"
+        fields:
+          - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
+
+      - name: "osteopathie"
+        label: "L'Ostéopathie"
+        file: "osteopathie.html"
+        fields:
+          - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
+
+      - name: "osteopathe"
+        label: "Votre Ostéopathe"
+        file: "osteopathe.html"
+        fields:
+          - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
+
+      - name: "coureur"
+        label: "Le Coureur"
+        file: "coureur.html"
+        fields:
+          - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
+
+      - name: "consultation"
+        label: "Consultation"
+        file: "consultation.html"
+        fields:
+          - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
+
+      - name: "contact"
+        label: "Contact"
+        file: "contact.html"
+        fields:
+          - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
