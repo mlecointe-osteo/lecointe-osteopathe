@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: mlecointe-osteo/lecointe-osteopathe
   branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 media_folder: "images"
 public_folder: "/images"
@@ -17,13 +20,13 @@ collections:
           - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
 
       - name: "osteopathie"
-        label: "L'Ostéopathie"
+        label: "L'Osteopathie"
         file: "osteopathie.html"
         fields:
           - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
 
       - name: "osteopathe"
-        label: "Votre Ostéopathe"
+        label: "Votre Osteopathe"
         file: "osteopathe.html"
         fields:
           - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
