@@ -2,8 +2,8 @@ backend:
   name: github
   repo: mlecointe-osteo/lecointe-osteopathe
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
+  auth_type: pkce
+  app_id: Ov23libQVlWPy8QxnqLr
 
 media_folder: "images"
 public_folder: "/images"
