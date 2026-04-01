@@ -2,7 +2,7 @@ backend:
   name: github
   repo: mlecointe-osteo/lecointe-osteopathe
   branch: main
-    base_url: https://lecointe-osteopathe.fr
+  base_url: https://lecointe-osteopathe.fr
   auth_endpoint: .netlify/functions/auth
 
 media_folder: "images"
