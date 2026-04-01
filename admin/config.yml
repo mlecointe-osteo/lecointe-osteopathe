@@ -4,6 +4,9 @@ backend:
   branch: main
   auth_type: pkce
   app_id: Ov23libQVlWPy8QxnqLr
+  base_url: https://github.com
+  auth_endpoint: login/oauth/authorize
+  auth_token_endpoint: login/oauth/access_token
 
 media_folder: "images"
 public_folder: "/images"
@@ -20,13 +23,13 @@ collections:
           - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
 
       - name: "osteopathie"
-        label: "L'Osteopathie"
+        label: "L'Ostéopathie"
         file: "osteopathie.html"
         fields:
           - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
 
       - name: "osteopathe"
-        label: "Votre Osteopathe"
+        label: "Votre Ostéopathe"
         file: "osteopathe.html"
         fields:
           - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
