@@ -4,9 +4,6 @@ backend:
   branch: main
   auth_type: pkce
   app_id: Ov23libQVlWPy8QxnqLr
-  base_url: https://github.com
-  auth_endpoint: login/oauth/authorize
-  auth_token_endpoint: login/oauth/access_token
 
 media_folder: "images"
 public_folder: "/images"
