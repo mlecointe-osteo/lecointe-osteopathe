@@ -12,39 +12,33 @@ collections:
   - name: "pages"
     label: "Pages du site"
     files:
-
       - name: "accueil"
         label: "Accueil"
         file: "index.html"
         fields:
-          - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
-
+          - {label: "Contenu HTML", name: "body", widget: "text"}
       - name: "osteopathie"
         label: "L'Ostéopathie"
         file: "osteopathie.html"
         fields:
-          - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
-
+          - {label: "Contenu HTML", name: "body", widget: "text"}
       - name: "osteopathe"
         label: "Votre Ostéopathe"
         file: "osteopathe.html"
         fields:
-          - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
-
+          - {label: "Contenu HTML", name: "body", widget: "text"}
       - name: "coureur"
         label: "Le Coureur"
         file: "coureur.html"
         fields:
-          - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
-
+          - {label: "Contenu HTML", name: "body", widget: "text"}
       - name: "consultation"
         label: "Consultation"
         file: "consultation.html"
         fields:
-          - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
-
+          - {label: "Contenu HTML", name: "body", widget: "text"}
       - name: "contact"
         label: "Contact"
         file: "contact.html"
         fields:
-          - {label: "Contenu HTML", name: "body", widget: "code", default_language: "html"}
+          - {label: "Contenu HTML", name: "body", widget: "text"}
