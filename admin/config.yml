@@ -2,8 +2,8 @@ backend:
   name: github
   repo: mlecointe-osteo/lecointe-osteopathe
   branch: main
-  auth_type: pkce
-  app_id: Ov23libQVlWPy8QxnqLr
+  base_url: https://fluffy-bonbon-893458.netlify.app
+  auth_endpoint: .netlify/functions/auth
 
 media_folder: "images"
 public_folder: "/images"
