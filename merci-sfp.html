@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Merci pour votre achat — Guide SFP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .merci-wrap {
+      min-height: 100vh;
+      background: #f7f5f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    .merci-card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #e5e5e0;
+      padding: 2.5rem 2rem;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+    .merci-icon {
+      width: 64px;
+      height: 64px;
+      background: #e8f4ee;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-size: 32px;
+    }
+    .merci-card h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 0.75rem;
+    }
+    .merci-card p {
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      color: #5a5a5a;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #2d6e4a;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.15s;
+      margin-bottom: 1.5rem;
+    }
+    .btn-download:hover { background: #235a3c; }
+    .divider { height: 1px; background: #ebebeb; margin: 1.5rem 0; }
+    .merci-footer {
+      font-family: 'Lato', sans-serif;
+      font-size: 13px;
+      color: #8a8a8a;
+      line-height: 1.6;
+    }
+    .merci-footer a { color: #2d6e4a; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="images/logo-transparent.png" alt="Maxence Lecointe Ostéopathe" class="logo-img" />
+      <div class="logo-text">
+        <strong>Maxence LECOINTE</strong>
+        <span>Ostéopathe D.O.</span>
+      </div>
+    </a>
+  </div>
+</header>
+
+<div class="merci-wrap">
+  <div class="merci-card">
+    <div class="merci-icon">✅</div>
+    <h1>Merci pour votre achat !</h1>
+    <p>Votre paiement a bien été reçu. Votre guide <strong>Syndrome fémoro-patellaire</strong> est prêt à être téléchargé.</p>
+
+    <a href="guide-sfp.pdf" download="Guide-SFP-Maxence-Lecointe.pdf" class="btn-download">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Télécharger mon guide (PDF)
+    </a>
+
+    <div class="divider"></div>
+
+    <p class="merci-footer">
+      Conservez ce lien — vous pouvez revenir télécharger votre guide à tout moment.<br><br>
+      Une question ? Écrivez-moi à <a href="mailto:maxence.lecointe@gmail.com">maxence.lecointe@gmail.com</a><br>
+      ou consultez <a href="coureur.html">la page dédiée aux coureurs</a>.
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
