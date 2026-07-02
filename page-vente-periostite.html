@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La périostite — tibiale | Maxence Lecointe — Ostéopathe</title>
+<meta name="description" content="Le plan simple pour soulager la douleur du tibia sans arrêter de courir.">
+<style>
+:root {
+  --primary: #3D2E26;
+  --accent: #A48A7A;
+  --text: #1A1A1A;
+  --muted: #6B5D54;
+  --bg: #FAF7F3;
+  --light: #F5F0EB;
+  --red: #B91C1C;
+  --red-light: #FCEAEA;
+  --rule: #D9D0C7;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  font-size: 17px;
+}
+.container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+header {
+  padding: 32px 0 24px;
+  border-bottom: 1px solid var(--rule);
+}
+header .logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+header img.logo { height: 56px; width: auto; }
+header .author {
+  font-size: 14px;
+  color: var(--muted);
+  text-align: right;
+}
+header .author strong { color: var(--primary); display: block; font-size: 15px; }
+.hero {
+  padding: 56px 0 48px;
+  text-align: center;
+}
+.hero .pretitle {
+  font-size: 16px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.hero h1 {
+  font-size: 44px;
+  line-height: 1.1;
+  color: var(--primary);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.hero .subtitle {
+  font-size: 19px;
+  color: var(--muted);
+  font-style: italic;
+  max-width: 560px;
+  margin: 0 auto;
+}
+.cta-block {
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  padding: 32px 28px;
+  text-align: center;
+  margin: 40px 0;
+}
+.cta-block .price {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  display: block;
+  margin-bottom: 8px;
+}
+.cta-block .price-detail {
+  font-size: 15px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 24px;
+  display: block;
+}
+.cta-block a.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 16px 36px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: opacity 0.2s;
+}
+.cta-block a.btn:hover { opacity: 0.85; }
+.cta-block .reassure {
+  margin-top: 16px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+}
+section { padding: 32px 0; }
+section h2 {
+  font-size: 28px;
+  color: var(--primary);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+}
+section h3 {
+  font-size: 19px;
+  color: var(--primary);
+  margin: 20px 0 8px;
+  font-weight: 600;
+}
+section p { margin-bottom: 14px; }
+.callout {
+  background: var(--light);
+  border-left: 6px solid var(--accent);
+  padding: 18px 22px;
+  margin: 20px 0;
+  border-radius: 0 4px 4px 0;
+}
+.callout.primary { border-left-color: var(--primary); }
+.callout.red {
+  background: var(--red-light);
+  border-left-color: var(--red);
+}
+.callout.red strong { color: var(--red); }
+.callout strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--primary);
+  font-size: 16px;
+}
+ul.checklist { list-style: none; padding-left: 0; }
+ul.checklist li {
+  padding: 8px 0 8px 32px;
+  position: relative;
+  border-bottom: 1px solid var(--rule);
+}
+ul.checklist li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 18px;
+}
+ul.checklist li:last-child { border-bottom: none; }
+ul.toc { list-style: none; padding-left: 0; }
+ul.toc li {
+  padding: 6px 0 6px 28px;
+  position: relative;
+  color: var(--muted);
+  font-size: 16px;
+}
+ul.toc li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+.exercises {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.exercise-card {
+  background: white;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 20px;
+}
+.exercise-card h4 {
+  color: var(--primary);
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.exercise-card p {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0;
+}
+.author-block {
+  background: white;
+  border: 1px solid var(--rule);
+  padding: 28px;
+  border-radius: 8px;
+  margin: 32px 0;
+}
+.author-block h3 { margin-top: 0; }
+.faq h3 {
+  cursor: pointer;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+  margin: 0;
+  position: relative;
+  padding-right: 28px;
+}
+.faq h3:after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  color: var(--accent);
+  font-size: 22px;
+  font-weight: 700;
+}
+.faq h3.open:after { content: "−"; }
+.faq .answer {
+  display: none;
+  padding: 12px 0 18px;
+  color: var(--muted);
+}
+.faq h3.open + .answer { display: block; }
+footer {
+  margin-top: 64px;
+  padding: 32px 0;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
+}
+footer a { color: var(--accent); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+@media (max-width: 600px) {
+  .hero h1 { font-size: 32px; }
+  .cta-block .price { font-size: 38px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo-row">
+      <img src="data:image/png;base64,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" alt="Logo Maxence Lecointe Ostéopathe" class="logo">
+      <div class="author">
+        <strong>Maxence Lecointe</strong>
+        Ostéopathe D.O. — Expert Running — Lille
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+<section class="hero">
+  <div class="pretitle">Pour les coureurs blessés</div>
+  <h1>La périostite<br>tibiale</h1>
+  <p class="subtitle">Le plan simple pour soulager la douleur du tibia sans arrêter de courir.</p>
+</section>
+
+<section>
+  <h2>Reconnaissez-vous votre situation ?</h2>
+  <p>Une douleur diffuse le long du tibia qui apparaît dès les premières minutes de course. Parfois elle s'atténue pendant l'effort, pour mieux revenir après. Vous avez essayé le repos, la glace, des semelles — mais à chaque reprise, la douleur revient au même endroit.</p>
+  <p>Vous n'êtes pas seul. La périostite tibiale (ou syndrome de stress tibial médial) est l'une des blessures les plus fréquentes chez les coureurs en progression — particulièrement les coureurs débutants ou ceux qui augmentent leur volume après une pause.</p>
+  <p>La bonne nouvelle : ce n'est presque jamais une fatalité. Mais le repos seul ne règle pas le problème — il faut <em>reconstruire la capacité du tissu</em> à supporter la charge de la course. C'est ce que ce guide vous apprend à faire, étape par étape.</p>
+</section>
+
+<div class="cta-block">
+  <span class="price">15 €</span>
+  <span class="price-detail">Paiement unique — PDF de 18 pages livré par e-mail.</span>
+  <a href="https://buy.stripe.com/fZu9AL62K52yb8f3u2bbG02" class="btn">→ Recevoir le guide maintenant</a>
+  <div class="reassure">Paiement sécurisé par Stripe — Livraison immédiate par e-mail.</div>
+</div>
+
+<section>
+  <h2>Ce que contient le guide</h2>
+  <ul class="toc">
+    <li>Auto-diagnostic en 6 questions pour confirmer que ce guide est bien pour vous</li>
+<li>Drapeaux rouges : reconnaître une fracture de fatigue (et quand consulter)</li>
+<li>Pourquoi ça fait mal et pourquoi ça dure (le rôle du périoste)</li>
+<li>Les 7 règles pour progresser sans aggraver</li>
+<li>Plan d'exercices sur 8 semaines (mollets, tibial postérieur, marche talons)</li>
+<li>Comment continuer à courir pendant le plan (volume, terrain, intensité)</li>
+<li>Récapitulatif visuel du plan complet sur 8 semaines</li>
+<li>Bonus : check-list de reprise imprimable</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Pour qui est ce guide ?</h2>
+  <p>Ce guide s'adresse aux coureurs qui ont une douleur diffuse le long du tibia et qui veulent reconstruire la tolérance de leur tibia à la charge sans arrêter complètement la course.</p>
+  <h3>Vous êtes au bon endroit si :</h3>
+  <ul class="checklist">
+    <li>Vous avez une douleur diffuse le long du tibia (pas localisée sur un point précis)</li>
+<li>Elle apparaît en début de sortie, parfois s'atténue, puis revient après</li>
+<li>Elle est apparue après une augmentation de volume, d'intensité, ou un changement de terrain</li>
+<li>Le repos seul n'a rien réglé durablement</li>
+<li>Vous voulez continuer à courir intelligemment, pas tout arrêter</li>
+<li>Vous êtes perdu(e) entre des conseils contradictoires</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Quand consulter avant de commencer</h2>
+  <div class="callout red">
+    <strong>⚠ Ce guide ne remplace pas une consultation médicale</strong>
+    Si vous présentez l'un des signes suivants, consultez un professionnel de santé avant de suivre le plan :
+  </div>
+  <ul class="checklist">
+    <li>Douleur très localisée sur un point précis du tibia (vs douleur diffuse)</li>
+<li>Douleur nocturne ou présente au repos</li>
+<li>Douleur reproductible par sautillements sur un pied (signe évocateur de fracture de fatigue)</li>
+<li>Gonflement visible ou tibia chaud au toucher</li>
+<li>Antécédent de troubles du cycle, carences alimentaires, perte de poids récente</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Le plan en 8 semaines</h2>
+  <p>Un programme de 8 semaines (l'os s'adapte plus lentement que les tissus mous, c'est volontaire). 3 séances de 10 à 15 minutes par semaine, sans matériel particulier (un élastique pour certains exercices). Vous continuez à courir intelligemment pendant tout le plan.</p>
+  <div class="exercises">
+    <div class="exercise-card"><h4>Élévations de talons bilatérales</h4><p>Renforcer les mollets — amortisseurs naturels du tibia.</p></div>
+<div class="exercise-card"><h4>Élévations unilatérales</h4><p>Augmenter la charge progressive sur chaque jambe.</p></div>
+<div class="exercise-card"><h4>Tibial postérieur (élastique)</h4><p>Travailler le contrôle de la pronation et de l'arche plantaire.</p></div>
+<div class="exercise-card"><h4>Marche talons / Flexion dorsale</h4><p>Renforcer le tibial antérieur, augmenter la tolérance directe du tibia.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="author-block">
+    <h3>Qui suis-je ?</h3>
+    <p>Je suis ostéopathe D.O. depuis 2015, installé à Lille (40 rue Royale, 59800). J'ai progressivement orienté ma pratique vers l'accompagnement du coureur — du débutant en sport-santé au préparateur de marathon et ultra-distance.</p>
+    <p>Au fil des années, une évidence s'est imposée : la majorité des douleurs du coureur ne sont pas un problème de mouvement ou d'anatomie. C'est un problème de <em>charge mal gérée</em>. Ce guide reprend exactement la méthode que j'utilise au cabinet, condensée pour que vous puissiez l'appliquer chez vous.</p>
+    <p style="margin-top: 16px; font-size: 14px; color: var(--muted);">
+      <strong>Pour aller plus loin :</strong> bilan personnalisé en cabinet (analyse de foulée, évaluation de la charge, plan de reprise individualisé) — <a href="https://www.doctolib.fr/osteopathe/lille/maxence-lecointe" style="color: var(--accent);">prendre rendez-vous sur Doctolib</a>.
+    </p>
+  </div>
+</section>
+
+<div class="cta-block">
+  <span class="price">15 €</span>
+  <span class="price-detail">PDF 18 pages — Livraison immédiate.</span>
+  <a href="https://buy.stripe.com/fZu9AL62K52yb8f3u2bbG02" class="btn">→ Recevoir le guide maintenant</a>
+  <div class="reassure">Paiement sécurisé Stripe — Garantie remboursé 14 jours.</div>
+</div>
+
+<section class="faq">
+  <h2>Questions fréquentes</h2>
+  <h3 onclick="this.classList.toggle('open')">Comment recevrai-je le guide ?</h3>
+  <div class="answer">Immédiatement après votre paiement, vous recevrez un e-mail avec le PDF en pièce jointe (vérifiez vos spams le cas échéant). Vous pourrez le lire sur tout appareil ou l'imprimer.</div>
+
+  <h3 onclick="this.classList.toggle('open')">Est-ce remboursable ?</h3>
+  <div class="answer">Oui. Si le guide ne vous convient pas, vous disposez de 14 jours pour demander un remboursement intégral, sans question. Il vous suffit de répondre à l'e-mail de confirmation.</div>
+
+  <h3 onclick="this.classList.toggle('open')">Et si la douleur persiste malgré le plan ?</h3>
+  <div class="answer">Si après 4 à 6 semaines de plan suivi régulièrement la douleur ne diminue pas, c'est généralement signe que d'autres facteurs sont en jeu (charge, biomécanique, terrain) qui demandent une évaluation personnalisée. Vous pouvez prendre rendez-vous au cabinet : <a href="https://www.doctolib.fr/osteopathe/lille/maxence-lecointe" style="color: var(--accent);">doctolib.fr/osteopathe/lille/maxence-lecointe</a>.</div>
+
+  <h3 onclick="this.classList.toggle('open')">Le guide est-il adapté aux débutants ?</h3>
+  <div class="answer">Oui. La méthode est expliquée pas à pas, sans jargon. Le plan d'exercices ne demande aucun matériel particulier (sauf un élastique pour certains). Que vous soyez en préparation marathon ou en reprise « sport-santé », les principes sont les mêmes.</div>
+
+</section>
+
+<footer>
+  <div class="container">
+    <p>
+      <strong>Maxence Lecointe</strong> — Ostéopathe D.O. — Expert Running<br>
+      Cabinet : 40 rue Royale, 59800 Lille — <a href="https://maps.app.goo.gl/REedwh2ijmQuvf5C8">Itinéraire</a><br>
+      Prise de rendez-vous : <a href="https://www.doctolib.fr/osteopathe/lille/maxence-lecointe">doctolib.fr/osteopathe/lille/maxence-lecointe</a>
+    </p>
+    <p style="margin-top: 16px; font-size: 12px;">
+      © 2026 Maxence Lecointe — Tous droits réservés. Mentions légales et CGV à compléter avant publication.
+    </p>
+  </div>
+</footer>
+
+</div>
+
+</body>
+</html>

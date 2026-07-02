@@ -57,6 +57,27 @@
     "sameAs": ["https://www.doctolib.fr/osteopathe/lille/maxence-lecointe"]
   }
   </script>
+
+  <!-- Style cartes guides -->
+  <style>
+    a.blessure-item {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    a.blessure-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+    .blessure-guide-label {
+      display: block;
+      font-size: 12px;
+      color: #4aafa0;
+      margin-top: 6px;
+      font-weight: 500;
+    }
+  </style>
 </head>
 <body>
 
@@ -193,11 +214,11 @@
     <p class="section-text">La course à pied génère des contraintes répétées sur l'ensemble du système locomoteur. Voici les blessures les plus fréquentes que je traite au cabinet :</p>
 
     <div class="blessures-grid">
-      <div class="blessure-item"><span>Périostite tibiale</span></div>
-      <div class="blessure-item"><span>Tendinite d'Achille</span></div>
+      <a href="page-vente-periostite.html" class="blessure-item"><span>Périostite tibiale</span><span class="blessure-guide-label">→ Voir le guide</span></a>
+      <a href="page-vente-achille.html" class="blessure-item"><span>Tendinite d'Achille</span><span class="blessure-guide-label">→ Voir le guide</span></a>
       <div class="blessure-item"><span>Syndrome ilio-tibial</span></div>
       <div class="blessure-item"><span>Fasciite plantaire</span></div>
-      <div class="blessure-item"><span>Douleur fémoro-patellaire</span></div>
+      <a href="page-vente-sfp.html" class="blessure-item"><span>Douleur fémoro-patellaire</span><span class="blessure-guide-label">→ Voir le guide</span></a>
       <div class="blessure-item"><span>Pubalgie du sportif</span></div>
       <div class="blessure-item"><span>Fracture de fatigue</span></div>
       <div class="blessure-item"><span>Douleurs lombaires</span></div>
