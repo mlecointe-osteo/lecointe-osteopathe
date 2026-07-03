@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Votre check-list est prête — Maxence Lecointe, Ostéopathe</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f7f5f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+      color: #1a1a1a;
+    }
+    .topbar {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.75rem;
+    }
+    .logo-text { font-size: 13px; color: #6b6b6b; letter-spacing: 0.02em; }
+    .badge {
+      font-size: 11px;
+      font-weight: 500;
+      background: #e8f4ee;
+      color: #2d6e4a;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #e5e5e0;
+      padding: 2rem;
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+    }
+    .icon-wrap {
+      width: 64px;
+      height: 64px;
+      background: #e8f4ee;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.25rem;
+      font-size: 32px;
+    }
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: 0.5rem;
+    }
+    .sub {
+      font-size: 14px;
+      color: #5a5a5a;
+      line-height: 1.6;
+      margin-bottom: 1.75rem;
+    }
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #2d6e4a;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.15s;
+      margin-bottom: 1.5rem;
+    }
+    .btn-download:hover { background: #235a3c; }
+    .divider { height: 1px; background: #ebebeb; margin: 1.5rem 0; }
+    .footer-note {
+      font-size: 12px;
+      color: #8a8a8a;
+      line-height: 1.7;
+    }
+    .footer-note a { color: #2d6e4a; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <span class="logo-text">Maxence Lecointe · Ostéopathe à Lille</span>
+    <span class="badge">Ressource gratuite</span>
+  </div>
+
+  <div class="card">
+    <div class="icon-wrap">✅</div>
+    <h1>Votre check-list est prête !</h1>
+    <p class="sub">Cliquez sur le bouton ci-dessous pour télécharger votre PDF. Vous pouvez l'imprimer ou le consulter sur votre téléphone.</p>
+
+    <a href="Check-list reprise de course.pdf" download="Check-list-reprise-course-Maxence-Lecointe.pdf" class="btn-download">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Télécharger la check-list (PDF)
+    </a>
+
+    <div class="divider"></div>
+
+    <p class="footer-note">
+      Vous souffrez d'une blessure spécifique ?<br>
+      Consultez <a href="coureur.html">la page dédiée aux coureurs</a> pour découvrir nos guides pratiques.<br><br>
+      Une question ? <a href="mailto:maxence.lecointe@gmail.com">maxence.lecointe@gmail.com</a>
+    </p>
+  </div>
+
+</body>
+</html>
