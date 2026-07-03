@@ -207,7 +207,7 @@
       <div class="bullet">Progression recommandée semaine par semaine</div>
     </div>
 
-    <form name="checklist-dl" method="POST" action="/merci-checklist.html" data-netlify="true">
+    <form name="checklist-dl" method="POST" action="/merci-checklist.html" data-netlify="true" id="checklist-form">
       <input type="hidden" name="form-name" value="checklist-dl">
 
       <div class="form-group">
@@ -222,6 +222,24 @@
         🔒 Aucun spam — uniquement la check-list. Désabonnement en 1 clic.
       </p>
     </form>
+
+    <script>
+      document.getElementById('checklist-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var formData = new FormData(this);
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString()
+        })
+        .then(function() {
+          window.location.href = '/merci-checklist.html';
+        })
+        .catch(function() {
+          window.location.href = '/merci-checklist.html';
+        });
+      });
+    </script>
 
     <div class="divider"></div>
 
